@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+}
+
+/*header 스타일*/
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: aliceblue;
+  border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+  color: rgb(39, 68, 163);
+  font-weight: bold;
+  font-size: 30px;
+  margin-right: 20px;
+}
+
+/* 네비게이션 스타일 */
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px; /*글자간 간격*/
+}
+header nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+  transition: color 0.3s ease; /*마우스 올렸을때 동작*/
+}
+header nav a:hover {
+  color: #0056b3;
+}
+
+/* 로그인/회원가입 버튼 그룹 스타일 */
+.auth-buttons {
+  display: flex; /* 버튼들을 가로로 나란히 */
+  gap: 10px; /* 버튼들 사이 간격 */
+}
+
+/* 버튼 스타일 */
+.auth-buttons button {
+  padding: 8px 15px; /* 버튼 안쪽 여백 */
+  border: 1px solid #ccc; /* 테두리 */
+  border-radius: 4px; /* 모서리 둥글게 */
+  background-color: #eee; /* 배경색 */
+  cursor: pointer; /* 마우스 커서 모양 */
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.auth-buttons button:hover {
+  background-color: #ddd; /* 마우스 올렸을 때 배경색 변경 */
+}
+
+/* 필요하다면 버튼 별도 스타일 */
+.auth-buttons .login-btn {
+  background-color: #007bff; /* 로그인 버튼 배경색 (파란 계열) */
+  color: white; /* 글씨색 흰색 */
+  border-color: #007bff;
+}
+
+.auth-buttons .login-btn:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+section {
+  margin-bottom: 1.5cm;
+}
+
+/* 고정 레이아웃 컨테이너 */
+.wrapper {
+  width: 70%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 1. 슬라이더 */
+.slider-section {
+  margin-top: 1.5cm;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-container {
+  position: relative;
+  width: 80%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slider-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.6);
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 1;
+}
+
+.slider-btn.left {
+  left: 10px;
+}
+
+.slider-btn.right {
+  right: 10px;
+}
+
+/* 2, 3. 카드 섹션 */
+.card-section h2 {
+  margin-left: 10%;
+  font-size: 1.5rem;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.card {
+  width: 18%;
+  margin: 0.5rem 0;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card a {
+  text-decoration: none;
+  color: #333;
+}
+
+.card h3 {
+  margin: 0.5rem 0 0.2rem;
+  font-size: 1.1rem;
+}
+
+/* 4. 유튜브 */
+.youtube-section {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.youtube-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+  gap: 1rem;
+}
+
+.youtube-container iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+
+/* 푸터 스타일 */
+footer {
+  background-color: #f2f2f2; /* 푸터 배경색 (조금 밝은 회색) */
+  padding: 20px; /* 안쪽 여백 */
+  text-align: center; /* 내용을 중앙 정렬 (선택 사항이지만 보통 푸터는 중앙 정렬 많이 해) */
+  border-top: 1px solid #ddd; /* 위쪽 경계선 */
+  margin-top: 40px; /* 위쪽 콘텐츠와의 간격 */
+}
+
+/* 푸터 네비게이션 스타일 */
+footer nav ul {
+  list-style: none; /* 목록 기호 없애기 */
+  padding: 0; /* 기본 패딩 제거 */
+  margin-bottom: 15px; /* ul 아래 p 태그와의 간격 */
+  display: flex; /* li 요소들을 가로로 나란히 */
+  justify-content: center; /* li 요소들을 중앙 정렬 (footer가 center 정렬일 경우) */
+  gap: 20px; /* li 요소들 사이 간격 */
+  /* li에 따로 display 설정을 안 해도 ul의 flex 속성으로 나란히 정렬돼 */
+}
+
+footer nav li {
+  /* display: inline-block; <--- 요 부분을 삭제하거나 주석 처리하면 돼! */
+  /* flex 컨테이너인 ul 덕분에 li는 자동으로 정렬돼서 따로 display 설정을 안 해도 괜찮아! */
+}
+
+footer nav a {
+  text-decoration: none; /* 밑줄 없애기 */
+  color: #808080; /* 회색 글씨색 */
+  font-weight: bold; /* 굵게 */
+  font-size: 15px; /* 글씨 크기 */
+  transition: color 0.3s ease; /* 마우스 올렸을 때 색상 변화 부드럽게 */
+  /* display: block; 또는 display: inline-block; 을 추가하면 클릭 영역이 넓어질 수 있어 */
+  /* 필요한 경우 이 부분을 추가해보자! */
+  display: inline-block;
+}
+
+footer nav a:hover {
+  color: #555; /* 마우스 올렸을 때 조금 더 진한 회색 */
+}
+
+/* 푸터 p 태그 스타일 (이 부분은 그대로 둬도 괜찮아) */
+footer p {
+  color: #a9a9a9; /* ul 색상(회색 #808080)보다 연한 회색 */
+  font-size: 13px; /* 글씨 크기 작게 */
+  margin-top: 5px; /* p 태그들 사이의 간격 */
+  line-height: 1.5; /* 줄 간격 조절 */
+}
+
+footer p:first-of-type {
+  margin-top: 0; /* 첫 번째 p 태그는 ul과의 간격을 위해 margin-top을 0으로 설정 */
+}

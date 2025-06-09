@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>현대모터스</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="index.html" style="text-decoration: none; color: inherit"
+          >현대모터스</a
+        >
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="#intro">현대모터스소개</a></li>
+          <li><a href="#info">매장소개</a></li>
+          <li><a href="#master">대표소개</a></li>
+          <li><a href="#tech">개발기술소개</a></li>
+          <li><a href="#write">집필도서소개</a></li>
+          <li><a href="#news">소식공간</a></li>
+          <li><a href="#location">찾아오시는 길</a></li>
+        </ul>
+      </nav>
+      <div class="auth-buttons">
+        <button class="login-btn">로그인</button>
+        <button class="signup-btn">회원가입</button>
+      </div>
+    </header>
+
+    <main>
+      <!-- 1. 이미지 슬라이더 -->
+
+      <section class="slider-section">
+        <div class="slider-container">
+          <button class="slider-btn left" onclick="prevImage()">
+            &#10094;
+          </button>
+          <img id="slider-image" src="이미지1.png" alt="슬라이드 이미지" />
+          <button class="slider-btn right" onclick="nextImage()">
+            &#10095;
+          </button>
+        </div>
+      </section>
+
+      <!-- 2. 보도자료 -->
+      <section class="card-section">
+        <h2>보도자료</h2>
+        <div class="card-container">
+          <!-- 카드 1개 예시 -->
+          <div class="card">
+            <img src="보도자료1.jpg" alt="보도자료 이미지" />
+            <a href="링크1.html"><h3>제목 1</h3></a>
+            <p>일부 내용이 여기에 들어갑니다.</p>
+          </div>
+          <!-- 4개 더 복사해서 사용 -->
+        </div>
+      </section>
+
+      <!-- 3. 활동 소식 -->
+      <section class="card-section">
+        <h2>활동 소식</h2>
+        <div class="card-container">
+          <!-- 카드 예시 -->
+          <div class="card">
+            <img src="활동1.jpg" alt="활동 이미지" />
+            <a href="링크2.html"><h3>활동 제목</h3></a>
+            <p>활동 관련 내용이 여기에 들어갑니다.</p>
+          </div>
+          <!-- 4개 더 복사해서 사용 -->
+        </div>
+      </section>
+
+      <!-- 4. 유튜브 바로가기 -->
+      <section class="youtube-section">
+        <div class="youtube-container">
+          <iframe
+            src="https://www.youtube.com/embed/Tq-QLECr2ok"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            src="https://www.youtube.com/embed/YBaZbLg_SZg"
+            allowfullscreen
+          ></iframe>
+          <!-- 추가 영상 iframe 2개씩 한 줄 -->
+        </div>
+      </section>
+
+      <script src="index.js"></script>
+    </main>
+
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="#inform">회사소개</a></li>
+          <li><a href="#service">이용약관</a></li>
+          <li><a href="#privacy">개인정보취급방침</a></li>
+          <li><a href="#refusa">이메일무단수집거부</a></li>
+        </ul>
+      </nav>
+
+      <p>
+        상호: 현대모터스 주소: 우.42268 대구광역시 수성구 달구벌대로 625길 10-12
+        전화: 053-793-2278
+      </p>
+      <p>COPYRIGHT(C) 2025현대모터스. ALL RIGHT RESRVED.</p>
+    </footer>
+  </body>
+</html>
